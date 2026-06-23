@@ -1,0 +1,67 @@
+{
+  "name": "@gonkabroker/ai-sdk-provider",
+  "version": "0.1.0",
+  "description": "Gonka Broker provider for the Vercel AI SDK — OpenAI-compatible access to open-source models on the decentralized Gonka network.",
+  "license": "MIT",
+  "author": "Woodenshark LLC",
+  "homepage": "https://gonkabroker.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamoeco/gonkabroker-integrations.git",
+    "directory": "vercel-ai-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/iamoeco/gonkabroker-integrations/issues"
+  },
+  "keywords": [
+    "ai",
+    "ai-sdk",
+    "vercel-ai-sdk",
+    "openai-compatible",
+    "gonka",
+    "gonkabroker",
+    "llm",
+    "inference"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^2.0.51"
+  },
+  "peerDependencies": {
+    "zod": "^3.25.76 || ^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
