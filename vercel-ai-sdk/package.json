@@ -1,17 +1,17 @@
 {
   "name": "@gonkabroker/ai-sdk-provider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gonka Broker provider for the Vercel AI SDK — OpenAI-compatible access to open-source models on the decentralized Gonka network.",
   "license": "MIT",
   "author": "Woodenshark LLC",
   "homepage": "https://gonkabroker.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamoeco/gonkabroker-integrations.git",
+    "url": "git+https://github.com/gonkabroker/gonkabroker-integrations.git",
     "directory": "vercel-ai-sdk"
   },
   "bugs": {
-    "url": "https://github.com/iamoeco/gonkabroker-integrations/issues"
+    "url": "https://github.com/gonkabroker/gonkabroker-integrations/issues"
   },
   "keywords": [
     "ai",
