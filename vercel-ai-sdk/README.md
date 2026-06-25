@@ -1,7 +1,7 @@
 # @gonkabroker/ai-sdk-provider
 
 [Gonka Broker](https://gonkabroker.com) provider for the [Vercel AI SDK](https://ai-sdk.dev).
-OpenAI-compatible access to open-source models (Qwen, Kimi, MiniMax, …) running on the
+OpenAI-compatible access to open-source models (MiniMax, Kimi, …) running on the
 decentralized [Gonka](https://gonka.ai) network — no crypto or wallet needed.
 
 Built on [`@ai-sdk/openai-compatible`](https://www.npmjs.com/package/@ai-sdk/openai-compatible).
@@ -25,7 +25,7 @@ import { gonkabroker } from '@gonkabroker/ai-sdk-provider';
 import { generateText } from 'ai';
 
 const { text } = await generateText({
-  model: gonkabroker('Qwen/Qwen3-235B-A22B-Instruct-2507-FP8'),
+  model: gonkabroker('MiniMaxAI/MiniMax-M2.7'),
   prompt: 'Explain decentralized inference in one sentence.',
 });
 
