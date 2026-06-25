@@ -38,14 +38,14 @@ llm models list | grep -i gonka
 Run a prompt (model ids are prefixed with `gonkabroker/`):
 
 ```bash
-llm -m 'gonkabroker/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8' 'Say hello in three words'
+llm -m 'gonkabroker/MiniMaxAI/MiniMax-M2.7' 'Say hello in three words'
 ```
 
 Pipe content in, start a chat, or use it from Python like any other LLM model:
 
 ```bash
-cat article.md | llm -m 'gonkabroker/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8' -s 'Summarize this'
-llm chat -m 'gonkabroker/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8'
+cat article.md | llm -m 'gonkabroker/MiniMaxAI/MiniMax-M2.7' -s 'Summarize this'
+llm chat -m 'gonkabroker/MiniMaxAI/MiniMax-M2.7'
 ```
 
 ## Manual alternative (without this plugin)
@@ -54,8 +54,8 @@ Because Gonka Broker is OpenAI-compatible, you can also wire it up without the p
 to LLM's `extra-openai-models.yaml`:
 
 ```yaml
-- model_id: gonkabroker-qwen3
-  model_name: Qwen/Qwen3-235B-A22B-Instruct-2507-FP8
+- model_id: gonkabroker-minimax
+  model_name: MiniMaxAI/MiniMax-M2.7
   api_base: https://proxy.gonkabroker.com/v1
   api_key_name: gonkabroker
 ```
