@@ -6,9 +6,8 @@
  * the live, authoritative catalog is always `GET /v1/models`.
  */
 export type GonkaBrokerChatModelId =
-  | 'Qwen/Qwen3-235B-A22B-Instruct-2507-FP8'
-  | 'moonshotai/Kimi-K2.6'
   | 'MiniMaxAI/MiniMax-M2.7'
+  | 'moonshotai/Kimi-K2.6'
   | (string & {});
 
 export type GonkaBrokerCompletionModelId = string & {};
