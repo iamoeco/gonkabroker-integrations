@@ -1,0 +1,28 @@
+[project]
+name = "llm-gonkabroker"
+version = "0.1"
+description = "LLM plugin for Gonka Broker - OpenAI-compatible access to open-source models on the decentralized Gonka network"
+readme = "README.md"
+authors = [{ name = "Gonka Broker" }]
+license = "MIT"
+requires-python = ">=3.10"
+classifiers = []
+dependencies = [
+    "llm>=0.27.1",
+    "httpx",
+    "openai>=1.57.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/gonkabroker/gonkabroker-integrations/tree/main/llm"
+Issues = "https://github.com/gonkabroker/gonkabroker-integrations/issues"
+
+[project.entry-points.llm]
+gonkabroker = "llm_gonkabroker"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["llm_gonkabroker"]
