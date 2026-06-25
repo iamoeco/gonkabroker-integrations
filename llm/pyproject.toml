@@ -1,6 +1,6 @@
 [project]
 name = "llm-gonkabroker"
-version = "0.1.0"
+version = "0.1.1"
 description = "LLM plugin for Gonka Broker - OpenAI-compatible access to open-source models on the decentralized Gonka network"
 readme = "README.md"
 authors = [{ name = "Gonka Broker" }]
