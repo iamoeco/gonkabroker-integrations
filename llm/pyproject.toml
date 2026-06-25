@@ -1,6 +1,6 @@
 [project]
 name = "llm-gonkabroker"
-version = "0.1.1"
+version = "0.1.2"
 description = "LLM plugin for Gonka Broker - OpenAI-compatible access to open-source models on the decentralized Gonka network"
 readme = "README.md"
 authors = [{ name = "Gonka Broker" }]
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/gonkabroker/gonkabroker-integrations/tree/main/llm"
+Homepage = "https://github.com/gonkabroker/gonkabroker-integrations/tree/master/llm"
 Issues = "https://github.com/gonkabroker/gonkabroker-integrations/issues"
 
 [project.entry-points.llm]
